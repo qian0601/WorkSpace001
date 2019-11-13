@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: client-feign
+
+eureka:
+  client:
+    #eureka\u670D\u52A1\u5730\u5740
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+
+#\u4EE5/api-a/ \u5F00\u5934\u7684\u8BF7\u6C42\u90FD\u8F6C\u53D1\u7ED9service-ribbon\u670D\u52A1\uFF1B
+#\u4EE5/api-b/\u5F00\u5934\u7684\u8BF7\u6C42\u90FD\u8F6C\u53D1\u7ED9service-feign\u670D\u52A1\uFF1B
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+  retryable: true
+

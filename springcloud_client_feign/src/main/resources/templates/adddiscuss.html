@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <link rel="stylesheet" href="../js/kindeditor/themes/default/default.css" />
+    <link rel="stylesheet" href="../js/kindeditor/plugins/code/prettify.css" />
+    <script charset="utf-8" src="../js/kindeditor/kindeditor-all.js"></script>
+    <script charset="utf-8" src="../js/kindeditor/lang/zh-CN.js"></script>
+    <script charset="utf-8" src="../js/kindeditor/plugins/code/prettify.js"></script>
+</head>
+<body>
+<div>
+    <form id="myForm">
+       <textarea  name="contect" cols="100" rows="8" style="width:700px;height:400px;">
+
+  </textarea>
+        <!-- 用来 存放  文本域 写的内容 给 后台 -->
+        <input type="hidden" name="content" id="hidId">
+        <br/>
+        <input type="button" onclick="adddis()" value="发表">
+    </form>
+
+
+</div>
+<script type="text/javascript">
+    var editor1 = null;
+    KindEditor.ready(function(K) {
+        /* textarea[name="textValue"]  name的属性名 必须和 上面文本域的name 属性名保持一致 */
+        editor1 = K.create('textarea[name="contect"]', {
+            cssPath : '../js/kindeditor/plugins/code/prettify.css',
+            uploadJson : '../js/kindeditor/jsp/upload_json.jsp',
+            fileManagerJson : '../js/kindeditor/jsp/file_manager_json.jsp',
+            allowFileManager : true,
+            afterCreate : function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    document.forms['example'].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    document.forms['example'].submit();
+                });
+            }
+        });
+        prettyPrint();
+    });
+
+    function adddis(){
+        $("#hidId").val(editor1.html());
+        $.ajax({
+            url:"../dis/adddis",
+            data:$("myForm").serialize(),
+            success:function(){
+                return "发表成功";
+            }
+        })
+    }
+</script>
+</body>
+</html>

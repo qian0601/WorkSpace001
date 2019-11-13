@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dashboard_9001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gqprovider8086" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ljhprovider8082" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mmhprovider8083" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_client_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_config_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_eureka7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_eureka7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_eureka7003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/whyprovider8084" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wyxprovider8085" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yytprovider8081" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

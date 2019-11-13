@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>青果&玲珑 ~ 快速解决电脑问题，工具软件下载。</title>
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="解决各种电脑问题，免费分享电脑软件教程经验等。">
+    <meta name="keywords" content="青果玲珑,青果社区,青果论坛,电脑教程,软件教程,电脑经验,易语言,软件下载,工具下载">
+    <meta name="generator" content="Typecho 1.2/18.10.23">
+    <meta name="template" content="echo">
+    <script src="../bootstrap/jquery.min.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="青果&玲珑 &raquo; RSS 2.0" href="../css/css">
+    <link rel="alternate" type="application/rdf+xml" title="青果&玲珑 &raquo; RSS 1.0" href="../css/css">
+    <link rel="alternate" type="application/atom+xml" title="青果&玲珑 &raquo; ATOM 1.0" href="../css/css">
+    <link rel="stylesheet" type="text/css" href="../css/toc_style.css">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/style-1573470940.css">
+    <script src="../js/layui.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<div class="browsehappy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</div>
+<![endif]-->
+
+<div class="layui-header header">
+    <div class="layui-main">
+        <a class="logo" href="">
+            <img src="../picture/1398331152.png" alt="青果&玲珑">
+        </a>
+
+        <ul class="layui-nav">
+            <li class="layui-nav-item layui-hide-xs layui-this">
+                <a href="">首页</a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href=javascript:"toWork()" title="原创工具">原创工具</a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href="file.html" title="归档">归档</a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href="talk.html" title="动态">动态</a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href="ly.html" title="留言">留言</a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href="about.html" title="关于">关于</a>
+            </li>
+
+            <li class="layui-nav-item layui-hide-xs ">
+                <a href="link.html" title="个人中心">个人中心</a>
+            </li>
+
+            <li class="layui-nav-item nav-btn layui-hide-sm">
+                <a href="javascript:;"><i class='layui-icon layui-icon-more'></i></a>
+                <dl class="layui-nav-child">
+                    <dd><a href=javascript:"toWork()">原创工具</a></dd>
+                    <dd><a href="file.html">归档</a></dd>
+                    <dd><a href="talk.html">动态</a></dd>
+                    <dd><a href="ly.html">留言</a></dd>
+                    <dd><a href="about.html">关于</a></dd>
+                    <dd><a href="link.html">个人中心</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--[这里是每页的关注微信和返回顶部]-->
+<link href="../css/wx.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+
+    $(function(){
+
+        // 页面浮动面板
+        $("#floatPanel > .ctrolPanel > a.arrow").eq(0).click(function(){$("html,body").animate({scrollTop :0}, 800);return false;});
+        $("#floatPanel > .ctrolPanel > a.arrow").eq(1).click(function(){$("html,body").animate({scrollTop : $(document).height()}, 800);return false;});
+
+        var objPopPanel = $("#floatPanel > .popPanel");
+        var w = objPopPanel.outerWidth();
+        $("#floatPanel > .ctrolPanel > a.qrcode").bind({
+            mouseover : function(){
+                objPopPanel.css("width","0px").show();
+                objPopPanel.animate({"width" : w + "px"},300);return false;
+            },
+            mouseout : function(){
+                objPopPanel.animate({"width" : "0px"},300);return false;
+                objPopPanel.css("width",w + "px");
+            }
+        });
+    });
+</script>
+
+<div id="floatPanel">
+    <div class="ctrolPanel">
+        <a class="arrow" href="#"><span>顶部</span></a><a class="contact" href="javascript:;" target="_blank"><span>Q群</span></a><a class="qrcode" href="#"><span>微信二维码</span></a><a class="arrow" href="#"><span>底部</span></a></div>
+    <div class="popPanel">
+        <div class="popPanel-inner">
+            <div class="qrcodePanel">
+                <img src="../picture/2819433467.png"><span>扫描二维码关注公众号</span></div>
+            <div class="arrowPanel">
+                <div class="arrow01">
+                </div>
+                <div class="arrow02">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[这里是每页的关注微信和返回顶部结束]-->
+
+
+<div class="layui-container">
+    <div class="layui-row layui-col-space15 main">
+        <div class="layui-col-md9 layui-col-lg9">
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="giftool.html" title="【原创/开源】GIF录制工具新鲜出炉 能跟随鼠标录制 非常适合录制小教程"><img src="../picture/3897504182.png" alt="【原创/开源】GIF录制工具新鲜出炉 能跟随鼠标录制 非常适合录制小教程" class="img-full"></a></div>
+                <a href="giftool.html">
+                    <h1>【原创/开源】GIF录制工具新鲜出炉 能跟随鼠标录制 非常适合录制小教程</h1>
+                    <p>
+                        由于这段时间发的文章大部分都有GIF教程，之前下载的GIF并不能跟随窗口移动就，动手能力强的我心想自己做一个，经过一天的奋斗，青果玲珑专属GIF录制工具所以这就出炉啦，欢迎各位下载使用。介绍：电脑GIF录制工具，可录制鼠标，加水印，更随鼠标移动窗口实现更随录制（适合录制小教程），控制保存的清晰度，高清图10帧也只有150KB左右，可预览录制选择是否保存，后面加单帧图片等（先录制才能加单帧图片哦）快捷键：F3开始录制/停止录制大概原理解释：制作一个窗口，放一个图片框作为侧面地板，底色银白，上面可以放非白色组件，底色透明，透明白色（此时窗口不要有白色的组件，不然会被透明），然后注册个快捷键，...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index1.html">电脑&软件工具</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-09 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 11℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="jietudel.html" title="网站截图 有不想截的内容 无需PS 可直接F12删除"><img src="../picture/00.png" alt="网站截图 有不想截的内容 无需PS 可直接F12删除" class="img-full"></a></div>
+                <a href="jietudel.html">
+                    <h1>网站截图 有不想截的内容 无需PS 可直接F12删除</h1>
+                    <p>
+                        有时候需要截图给某人，但是又不想截出网页中某个内容，无需PS，使用审查元素轻松删除不想别人看的！文字教程：对准要删除的内容，鼠标右键单击，选择查看元素，此时会自动选中内容，直接按下删除键就可以删除啦！然后就可以截图了！Ps:删除的并不是表示原来页面没有了，刷新一下就还是会出现的。                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-07 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 14℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="11bijia.html" title="淘宝京东双十一购物避坑神器 比价看商家是否偷偷涨价"><img src="../picture/1260328938.png" alt="淘宝京东双十一购物避坑神器 比价看商家是否偷偷涨价" class="img-full"></a></div>
+                <a href="11bijia.html">
+                    <h1>淘宝京东双十一购物避坑神器 比价看商家是否偷偷涨价</h1>
+                    <p>
+                        一年一度双十一啊，千手斗罗们不知你们还剩下多少双手，我购物车也是一堆呀，不过精打细算的我为了生活不能不看直接买买买，只能寄出比价神器，查看180天内宝贝的价格变动，如果是偷偷涨价，统统的打死（不买）！这种软件有很多，名字我不详细说是哪一款（证明自己不是在打广告！），但是方法我告诉你们，去浏览器的扩展里面搜索关键词 “比价” 就会有很多扩展啦~下面说一下避坑演示：在安装好比价神器之后，打开购物页面，一半在价格下面会出现插件，鼠标放上去应该就能看到价格了。比如下面这一款，6月份就是买3299，双十一却偷偷涨价3799，到双十一当天才回去，还狂欢价.....（不过没有在原本最低的时候涨价就是了...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-05 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 21℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="jdtime.html" title="一键校对本地时间和网络时间的工具下载（附带原理说明）"><img src="../picture/86715526.png" alt="一键校对本地时间和网络时间的工具下载（附带原理说明）" class="img-full"></a></div>
+                <a href="jdtime.html">
+                    <h1>一键校对本地时间和网络时间的工具下载（附带原理说明）</h1>
+                    <p>
+                        电脑本地时间是很重要的哦，如果时间过于很久之前，不仅你自己看时间不知今夕是何年，网站也会因此出现各种问题，比如证书错误，比如因为证书错误所以导致图片加载不出来，然后导致你无法查看网页。所以这里制作了一款工具给大家使用。介绍一下原理：工具的本机时间取的是当前电脑系统的时间，而每次点击校准按钮都会访问网络时间的网站，然后取网页源码，然后取出里面的时间文本，在转换成时间格式然后在置本地时间~可以说是灰常简单了。其他资料：其实Windows系统是可以自己校对的，校对方法：双击右下角时间弹出日期和时间对话框》选择Internet 时间》点击更改设置 》在弹出的设置里面勾选上与Internet时间服...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index1.html">电脑&软件工具</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-04 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 17℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="zhengshucuowu.html" title="怎么解决此网站的安全证书存在问题"><img src="../picture/2313095774.png" alt="怎么解决此网站的安全证书存在问题" class="img-full"></a></div>
+                <a href="zhengshucuowu.html">
+                    <h1>怎么解决此网站的安全证书存在问题</h1>
+                    <p>
+                        如果遇上了此网站的安全证书存在问题。当你打开淘宝，百度，或者某某网站的时候出现了这样的问题，别急，查看你右下角的电脑时间。可能是本地时间是很久以前的，所以导致了证书过期，你需要修改一下电脑时间即可。自动校对：双击右下角时间弹出日期和时间对话框》选择Internet 时间》点击更改设置 》在弹出的设置里面勾选上与Internet时间服务器同步即可。当然，我这里也有制作好的校对软件，点击一下按钮即可校对电脑时间和网络时间一样。                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index3.html">电脑&问题排查</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-04 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 10℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="fpszhunxin.html" title="fps游戏通用不闪烁准心工具下载 csgo csol 等等都可以用哦"><img src="../picture/1714075691.png" alt="fps游戏通用不闪烁准心工具下载 csgo csol 等等都可以用哦" class="img-full"></a></div>
+                <a href="fpszhunxin.html">
+                    <h1>fps游戏通用不闪烁准心工具下载 csgo csol 等等都可以用哦</h1>
+                    <p>
+                        这是17年写的一款准心工具，本来准备开源的，但是找不到源码了，我就说明一下吧。优点和缺点优点工具形式，并非内存加载，不闪烁，不属于外挂，游戏不检测非法，就很平常的一个辅助工具而已。缺点游戏全屏模式无法使用（为啥全屏无法使用下面说明工具的原理会解释）PS游戏必须是窗口模式或者全屏窗口模式（现在很多游戏都有这个选项的）工具原理准心其实是PS画的图片，（没错就是图片）之前的制作的都是屏幕写字的方式，虽然也不非法，但是因为频率和游戏刷新值不一样，即使你时钟设置的在快也还是会闪，除非是内存挂方式的准心，或是HOOK了D3D的准心，否则会闪。而这种PS画的图片，只需要把准心图片放在窗口上，然后透明那...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index1.html">电脑&软件工具</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-02 AM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 56℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 1条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="38.html" title="怎么恢复浏览器浏览状态？如何保持浏览器打开还是上一次打开的页面。"><img src="../picture/2147170303.png" alt="怎么恢复浏览器浏览状态？如何保持浏览器打开还是上一次打开的页面。" class="img-full"></a></div>
+                <a href="38.html">
+                    <h1>怎么恢复浏览器浏览状态？如何保持浏览器打开还是上一次打开的页面。</h1>
+                    <p>
+                        相信很多人有时候都是打开一大串页面，而下次又要重新打开就会很繁琐，或者是突然停电，关机，正在编辑或浏览的页面没有了，简直爆炸。莫慌，启动一个设置，这些统统不在话下！那就是：恢复先前的浏览状态（火狐）从上次停下的地方继续（谷歌）详细设置：打开浏览器 设置/选项页面 到里面找 常规/启动时等（其他浏览器也是差不多的，找一下就可以了）Ps:手机也可以的哦，打开了很多页面，下次启动一样可以继续浏览，通常都是这样设置的。图片查看：GIF教程与效果演示：                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-11-01 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 17℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="hotkey.html" title="Windows系统常用快捷键大全 电脑快捷键用起来 效率高一半"><img src="../picture/4037363016.jpg" alt="Windows系统常用快捷键大全 电脑快捷键用起来 效率高一半" class="img-full"></a></div>
+                <a href="hotkey.html">
+                    <h1>Windows系统常用快捷键大全 电脑快捷键用起来 效率高一半</h1>
+                    <p>
+                        快捷键，是个神奇的功能，就单说Ctlr+C和Ctrl+V这两个键，比你用鼠标去复制粘贴快了一倍的时间，所以这里发布一些常用快捷键给大家~发布的是常用的快捷键，并不是一股脑把所有快捷键都发出去哦。Esc 键：escape，退出键（常用语 软件退出 或者游戏呼出退出界面等）Tab 键：tabulator key，↔ 跳格键，在文本编辑软件按一下增加几个空格或者加一个字符（9）大概是一段空白的宽度，Windows中可用于切换屏幕上的焦点，比如软件一个界面有很多编辑框，你按TAB键可以切换过去而不用点击鼠标。在游戏里经常为看分或者看地图键位。Ctrl 键：control， 一般用来使用组合例如c...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-10-31 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 31℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="gaizhifubao.html" title="审查元素修改支付宝余额 说起来你可能不信 我几秒就让我的支付宝有了10W块钱"><img src="../picture/3370165940.png" alt="审查元素修改支付宝余额 说起来你可能不信 我几秒就让我的支付宝有了10W块钱" class="img-full"></a></div>
+                <a href="gaizhifubao.html">
+                    <h1>审查元素修改支付宝余额 说起来你可能不信 我几秒就让我的支付宝有了10W块钱</h1>
+                    <p>
+                        前言：用审查元素来修改网页中的元素，经常被网页设计师来临时修改自己的网页样式，注：改支付宝余额看起来虽然有那么多，实际上你的钱是没有变的，只是一个修改后的数据，就像PS一样。请不要用于任何非法用途，改完截个图装个逼发朋友圈就行了~文字教程：对准要修改的余额或内容》鼠标右键单击选择 审查元素（有些浏览器也叫 查看元素）》此时会自动跳到元素出 直接双击修改数值即可。GIF教程：其他教程：浏览器审查元素找回账号的密码浏览器F12下载网页音乐视频等                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-10-29 PM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 29℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="title-article list-card">
+                <div class="list-pic"><a href="recoverpassword.html" title="忘记密码账号密码 但是浏览器记住了 怎么知道密码是什么 浏览器怎么找回密码？"><img src="../picture/00.png" alt="忘记密码账号密码 但是浏览器记住了 怎么知道密码是什么 浏览器怎么找回密码？" class="img-full"></a></div>
+                <a href="recoverpassword.html">
+                    <h1>忘记密码账号密码 但是浏览器记住了 怎么知道密码是什么 浏览器怎么找回密码？</h1>
+                    <p>
+                        对于健忘又没有使用保存密码插件的习惯的人来说，忘记密码是经常的事情。而大家知道的也就是通过网站的找回密码选项，通过邮箱，手机号，人工等方式找回密码，但是如果是个小网站，没有找回的功能，或者当时是随便注册，自己都忘记了密保邮箱怎么办呢？电脑浏览器记住了密码，自己却忘记了，这里提供一种方法查看密码PS:这种方法可以查看任意在浏览器登入时保存的填表密码，但是并不表示密码是可以登入的。（也就是你后面更改过密码，但是浏览器没有更改所以密码就是错的了。）文字教程：打开要登入的网站选择自动填表填写好账号密码对准密码处鼠标单击右键选择 审查元素（有些浏览器也叫查看元素）在开发者控制台里会自动选中元素，在...                        </p>
+                </a>
+                <div class="title-msg">
+                    <span><i class="layui-icon">&#xe705;</i> <a href="index2.html">电脑&教程经验</a></span>
+                    <span><i class="layui-icon">&#xe60e;</i> 2019-10-29 AM </span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe62c;</i> 36℃</span>
+                    <span class="layui-hide-xs"><i class="layui-icon">&#xe63a;</i> 0条</span>
+                </div>
+            </div>
+            <div class="page-navigator">
+                <div class="layui-laypage layui-laypage-molv"><a href="index4.html" class="current">1</a><a href="index5.html">2</a><a href="index5.html" class="next">»</a></div>            </div>
+        </div>
+
+
+
+
+
+        <div class="sidebar layui-col-md3 layui-col-lg3">
+
+
+
+            <div class="component">
+                <form class="layui-form" id="search" method="post" action="https://qingguox.com/" role="search">
+                    <div class="layui-inline input">
+                        <input type="text" id="s" name="s" class="layui-input" required="" lay-verify="required" placeholder="输入关键字搜索">
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn layui-btn-sm layui-btn-primary"><i class="layui-icon">&#xe615;</i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="column">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe705;</i> 栏目分类</h3>
+                <ul class="layui-row layui-col-space5">
+                    <li class="layui-col-md12 layui-col-xs6"><a href="index6.html"><i class="layui-icon">&#xe63c;</i> 青果&玲珑<span class="layui-badge layui-bg-gray">0</span></a></li><li class="layui-col-md12 layui-col-xs6"><a href="index2.html"><i class="layui-icon">&#xe63c;</i> 电脑&教程经验<span class="layui-badge layui-bg-gray">8</span></a></li><li class="layui-col-md12 layui-col-xs6"><a href="index1.html"><i class="layui-icon">&#xe63c;</i> 电脑&软件工具<span class="layui-badge layui-bg-gray">6</span></a></li><li class="layui-col-md12 layui-col-xs6"><a href="index3.html"><i class="layui-icon">&#xe63c;</i> 电脑&问题排查<span class="layui-badge layui-bg-gray">3</span></a></li>        </ul>
+            </div>
+            <div class="dynamic">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe60c;</i>博主动态 ~ </h3>
+                <ul>
+                    <li><span class="layui-badge-dot layui-bg-gray"></span><p>请注意文章内的文字，很多人会经常一目十行忽略了文章中重要的细节，例如密码，例如重要步骤。<small>2019年10月25日 11:19:04</small></p></li><li><span class="layui-badge-dot layui-bg-gray"></span><p>QQ群：435242252<small>2019年10月23日 12:36:56</small></p></li><li><span class="layui-badge-dot layui-bg-gray"></span><p>之前此网站是青果社区论坛的，但是论坛维护量大，加上备案问题，所以我决定关闭了，改成了青果玲珑这个博客站，此站点主要分享一些电脑问题的处理和一些原创软件和教程资料之类的。<small>2019年10月23日 12:34:25</small></p></li>
+                </ul>
+            </div>
+            <div class="tags">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe66e;</i>标签云</h3>
+                <div>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(69, 11, 198)" href="index7.html" title='浏览器技巧'>浏览器技巧</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(146, 158, 71)" href="index8.html" title='浏览器'>浏览器</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(109, 201, 218)" href="index9.html" title='软件下载'>软件下载</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(193, 126, 226)" href="index10.html" title='工具下载'>工具下载</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(64, 174, 66)" href="index11.html" title='微信多开'>微信多开</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(151, 183, 72)" href="index12.html" title='系统问题'>系统问题</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(136, 180, 217)" href="index13.html" title='F12控制台'>F12控制台</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(61, 236, 116)" href="index14.html" title='审查元素'>审查元素</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(37, 132, 57)" href="index15.html" title='原创工具'>原创工具</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(254, 110, 52)" href="index16.html" title='编程工具'>编程工具</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(58, 160, 219)" href="index17.html" title='系统工具'>系统工具</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(71, 209, 9)" href="index18.html" title='PCHunter'>PCHunter</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(214, 175, 10)" href="index19.html" title='wmp'>wmp</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(177, 28, 87)" href="index20.html" title='怎么打开扩展名'>怎么打开扩展名</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(102, 39, 126)" href="index21.html" title='更改扩展名'>更改扩展名</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(65, 182, 251)" href="index22.html" title='控制面板'>控制面板</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(61, 17, 49)" href="index23.html" title='微信多开方式'>微信多开方式</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(82, 106, 150)" href="index24.html" title='微信多开器'>微信多开器</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(249, 33, 115)" href="index25.html" title='xuetr'>xuetr</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(48, 155, 80)" href="index26.html" title='播放器'>播放器</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(48, 18, 211)" href="index27.html" title='MP3下载器'>MP3下载器</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(203, 165, 40)" href="index28.html" title='音乐下载'>音乐下载</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(153, 55, 43)" href="index29.html" title='下载工具'>下载工具</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(91, 177, 150)" href="index30.html" title='工具源码'>工具源码</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(243, 216, 164)" href="index31.html" title='免费下载'>免费下载</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(170, 54, 4)" href="index32.html" title='找回密码'>找回密码</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(240, 69, 80)" href="index33.html" title='保存密码'>保存密码</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(195, 193, 241)" href="index34.html" title='快捷键'>快捷键</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(185, 166, 24)" href="index35.html" title='Windows'>Windows</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" style="color: rgb(80, 15, 115)" href="index36.html" title='恢复状态'>恢复状态</a>
+                </div>
+            </div>
+            <div class="link">
+                <h3 class="title-sidebar"><i class="layui-icon">&#xe64c;</i>友情链接<a style="float: right;color: #666;" href="link.html">申请</a></h3>
+                <div>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" href="index37.html" title='青果&玲珑' target="_blank">青果&玲珑</a>
+                    <a class="layui-btn layui-btn-xs layui-btn-primary" href="javascript:;" title='百度一下' target="_blank">百度</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="layui-col-md12 t-copy">
+        <span class="layui-breadcrumb">
+            <span>&copy; 2019 <a href="">青果&玲珑 - 青果社区</a></span>
+            <span class="layui-hide-xs">Poweed by <a href="javascript:;" target="_blank" rel="nofollow">Typecho</a></span>
+            <span>Theme by <a href="javascript:;" target="_blank" rel="nofollow">Echo</a></span>
+ <span>最终修改 by <a href="index37.html" target="_blank" rel="nofollow">狐说</a></span>
+        </span>
+    </div>
+</div>
+
+<script>
+    window.content_index_showTocToggle = true;
+    function content_index_toggleToc() {
+        var tts = "显示";
+        var tth = "隐藏";
+        if (window.content_index_showTocToggle) {
+            window.content_index_showTocToggle = false;
+            document.getElementById("toc-content").style.display = "none";
+            document.getElementById("content-index-togglelink").innerHTML = tts
+        } else {
+            window.content_index_showTocToggle = true;
+            document.getElementById("toc-content").style.display = "block";
+            document.getElementById("content-index-togglelink").innerHTML = tth
+        }
+    }
+</script><script type="text/javascript" color="0,0,255" opacity="0.7" zindex="999" count="120" src="../js/canvas-nest.js"></script>
+<!--[百度统计]-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?704709c0e7ba659aaa4ffadac5a75d8b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--[百度统计end]-->
+
+</body>
+
+<script>
+    toWork=function () {
+
+        alert(111111111)
+        $.ajax({
+            url:"../page/toWorks",
+            type:"post",
+            success:function () {
+            },
+            error:function () {
+                alert("失败！！！")
+            }
+        })
+    }
+
+
+</script>
+</html>

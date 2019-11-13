@@ -1,0 +1,30 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: client-feign
+  #redis连接池信息
+  thymeleaf:
+    cache: false
+    servlet:
+      content-type: text/html
+      
+
+eureka:
+  client:
+    #eureka\u670D\u52A1\u5730\u5740
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+feign:
+  hystrix:
+    #\u5F00\u542F\u65AD\u8DEF\u5668
+    enabled: true
+# \u7AEF\u70B9\u7BA1\u7406 hystrixDashboard
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+

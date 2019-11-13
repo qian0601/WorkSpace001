@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="whyprovider8084" />
+        <module name="ljhprovider8082" />
+        <module name="wyxprovider8085" />
+        <module name="common" />
+        <module name="mmhprovider8083" />
+        <module name="gqprovider8086" />
+        <module name="yytprovider8081" />
+        <module name="springcloud_zuul" />
+        <module name="dashboard_9001" />
+        <module name="springcloud_config_server" />
+        <module name="springcloud_eureka7003" />
+        <module name="springcloud_eureka7002" />
+        <module name="springcloud_eureka7001" />
+        <module name="api" />
+        <module name="springcloud_client_feign" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud_dashboard" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="dashboard_9001" options="-parameters" />
+      <module name="gqprovider8086" options="-parameters" />
+      <module name="ljhprovider8082" options="-parameters" />
+      <module name="mmhprovider8083" options="-parameters" />
+      <module name="springcloud_client_feign" options="-parameters" />
+      <module name="springcloud_config_server" options="-parameters" />
+      <module name="springcloud_dashboard" options="-parameters" />
+      <module name="springcloud_eureka7001" options="-parameters" />
+      <module name="springcloud_eureka7002" options="-parameters" />
+      <module name="springcloud_eureka7003" options="-parameters" />
+      <module name="springcloud_zuul" options="-parameters" />
+      <module name="whyprovider8084" options="-parameters" />
+      <module name="wyxprovider8085" options="-parameters" />
+      <module name="yytprovider8081" options="-parameters" />
+    </option>
+  </component>
+</project>

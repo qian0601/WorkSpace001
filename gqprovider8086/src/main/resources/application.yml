@@ -1,0 +1,36 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    #\u5E94\u7528\u540D\u79F0
+    name: provider8086
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.27:3306/public_demo
+    username: root
+    password: root
+  cloud:
+    config:
+      #指明使用的环境，测试、开发、生产（正式）
+      profile: dev
+      discovery:
+        #从配置中心读取文件，默认是false
+        enabled: true
+        #配置中心的servieId，即服务名
+        service-id: config-server
+  data:
+    mongodb:
+      host: 192.168.1.27
+      port: 27017
+      database: public_demo
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+eureka:
+  client:
+    #eureka\u670D\u52A1\u5730\u5740
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+
